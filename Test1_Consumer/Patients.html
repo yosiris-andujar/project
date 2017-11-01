@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="PatientsTest">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="Scripts/angular.js"></script>
+    <script src="PatientApp.js"></script>
+    <script src="patientTest.js"></script>
+</head>
+<body ng-controller="callPatients">
+    <h2>Patients Test</h2>
+    <ul class="list-group">  
+        <!--{{deletePatient(1)}}-->
+        <li class="list-group-item" ng-repeat="d in patients">          
+           {{d.patientId}}
+            {{d.patientPhone}}
+            {{d.patientEmail}}
+            {{d.lastName}}
+            {{d.firstName}}
+            <!--{{d.name}}
+            {{d.price}}-->
+        </li>
+    </ul>
+    <button ng-click="getPatients()" type="submit" value="Submit Review">getPatients</button>  
+    <button ng-click="insertPatient()" type="submit" value="Submit Review">insertPatient</button> 
+
+</body>
+</html>
