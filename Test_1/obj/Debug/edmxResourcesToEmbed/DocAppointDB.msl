@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DocSchedulerModelStoreContainer" CdmEntityContainer="DocSchedulerEntities">
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="DocSchedulerModel.Appointment">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="appointmentId" ColumnName="appointmentId" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="startTime" ColumnName="startTime" />
+          <ScalarProperty Name="endTime" ColumnName="endTime" />
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="DocSchedulerModel.Patient">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="patientId" ColumnName="patientId" />
+          <ScalarProperty Name="patientEmail" ColumnName="patientEmail" />
+          <ScalarProperty Name="patientPhone" ColumnName="patientPhone" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
